@@ -16,7 +16,7 @@ def findLetter(fingers,lmList):
                 c.append(1)
             else:
                 c.append(0)
-    print(c,fingers)            
+             
     if c.count(1) == 4:
         letter = 'C'    
     if fingers[1]== 1 and totalFingers == 1:
@@ -31,7 +31,7 @@ def findLetter(fingers,lmList):
     distance = math.hypot(x2-x1, y2-y1)
     distance1 = math.hypot(x3-x0,y3-y0)
     distance0 = math.hypot(x2-x0,y2-y0)
-    #print(distance0)
+   
 
     if fingers[1] == 0 and fingers[2] ==1 and fingers[3]==1 and fingers[4] ==1:
         letter ='F'
@@ -46,7 +46,7 @@ def findLetter(fingers,lmList):
             letter = 'H'
 
     if lmList[8][1] > lmList[5][1] and lmList[4][1] > lmList[1][1] and fingers[0]==1 and totalFingers == 1:
-        print(distance01)
+        
         if distance01 > 50 and distance01 < 150:
             letter = 'G'
 
@@ -66,7 +66,7 @@ def findLetter(fingers,lmList):
         letter = 'M'
 
     if c[0]==1 and c[1]==1  and c.count(1)==2:
-        print("opaaaaaaaaaaa")
+        
         letter = 'N'     
 
     if distance0 < 20 and c.count(1) == 4:
